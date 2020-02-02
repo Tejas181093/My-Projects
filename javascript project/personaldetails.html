@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-image: url("vote.png");
+			background-size: cover;
+		}
+		input[type='text'],input[type='password']{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+			}
+			input[type='submit'],input[type='Log In'], input[type='button']{
+			background:linear-gradient(aqua 5%, dodgerblue 100%);
+			/*background-color: dodgerblue;*/
+			width: 100px;
+			height: 27px;
+			color:white;
+			border:none;
+			cursor: pointer;
+			border-radius: 9px;
+			}
+			#one{
+				border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+			}
+			#select{
+				border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+			}
+			#radio{
+				border:none;
+			text-align: center;
+			
+			}
+			#select2{
+				border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+		}
+		#telephone{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+		}
+		#email{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+		}
+		#textarea{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			
+		}
+	</style>
+	<title>Personal Details</title>
+</head>
+<body background="C:\Users\tejas\Desktop\Sourcekode\trees.jpg">
+	
+<form name="persondetails" method="get">
+<center><table bgcolor="violet" width="500" height="675">
+	
+		
+		<th colspan="2"> PERSONAL DETAILS </th>
+		
+	
+<tr>
+	<td align="center"> <font color="blue"> Title </font> </td>
+	<td> <select id="select" name="gender">
+	<option value="Mr.">Mr.</option>
+	<option value="Mrs.">Mrs.</option>
+	<option value="Ms.">Ms.</option>
+	</select> </td> 
+</tr> 
+
+
+
+	<tr>
+	<td align="center"> <label> <font color="blue"> First Name:</label></font> </td>
+	<td> <input type="text" name="firstname" placeholder="First Name" required> </td> 
+    </tr>
+ 
+
+	<tr>
+	<td align="center"> <label> <font color="blue">Last Name:</label></font> </td>
+	<td> <input type="text" name="lastname" placeholder="Last Name" required> </td>
+    </tr>
+
+
+    <tr>
+	<td align="center"> <label> <font color="blue"> Address </label></font> </td>
+	<td> <textarea id="textarea" rows="6" cols="18" placeholder="Your Address Here"></textarea> </td>
+    </tr>
+
+
+    <tr>
+	<td align="center"> <font color="blue"> Select City </font> </td>
+	<!-- <td> <select id="select" name="City" onchange="sel()"> -->
+	<td> <select id="select" name="City">
+	<option value="0"><a href="legalage.html"> Pune</a></option>
+	<option value="1"><a href="legalage2.html"> Mumbai</a></option>
+	<option value="2"><a href="legalage3.html"> Kolhapur</a></option>
+	</select> </td> 
+	</tr> 
+
+
+
+<tr>
+	<td align="center"> <label> <font color="blue">Date of Birth:</label></font> </td>
+	<td> <input id="one" type="datetime-local" name="bday"> </td>
+</tr>
+
+
+
+
+<tr>
+	<td align="center"> <font color="blue"> Gender:</font> </td> <td> <input id="radio" type="radio" name="gender"> Male <br> <!-- value of name attribute must be same in radio buttons-->
+	<input type="radio" name="gender"> Female </td> 
+</tr>
+	
+	
+
+
+<tr>
+	<td align="center"> <label><font color="blue">Mobile Number</label></font></td>
+	<td><select id="select2" name="countrycode">
+		<option value="+91">+91<br></option>
+		<option value="+1">+1<br></option>
+		<option value="+44">+44<br></option>
+	</select>
+	<input id="telephone" type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile Number" required></td>
+</tr>
+
+
+
+
+<tr>
+	<td align="center"><label><font color="blue">Email Id</label></font></td>
+	<td><input id="email" type="Email" name="email" placeholder="abc@example.com" required></td>
+</tr>
+
+
+
+<tr>	
+	<td align="center"><label> <font color="blue">Password </label></font></td>
+	<td><input type="Password" name="pass" placeholder="password" required></td>
+</tr>
+
+
+
+<tr>
+
+	<td></td>
+
+	<td><input type="Submit" name="Submit" value="Submit" onclick="validate()">
+		<input type="Button" name="button" value="Log In"></td>
+<tr>
+
+
+
+<!-- <tr>
+	<td><button style="background-color: blue" > Submit </button></td>
+
+	<td><button style="background-color: blue"> Log In </button></td>
+<tr> -->
+</table>
+</center>
+</form>
+
+
+
+<script type="text/javascript">
+function validate(){
+	if(document.persondetails.firstname == null || document.persondetails.firstname == ""){
+		alert("please provide first Name");
+			document.persondetails.firstname.focus();
+			
+	}
+	else if(document.persondetails.lastname == null || document.persondetails.lastname == ""){
+		alert("please provide last Name");
+			document.persondetails.lastname.focus();
+		
+
+		}
+		else if( document.getElementById("select").value==0){
+			open("legalage.html");
+		}else if( document.getElementById("select").value==1){
+			open("legalage2.html");
+		}else if( document.getElementById("select").value==2){
+			open("legalage3.html");
+		}
+
+	
+	
+	else if(document.persondetails.bday == null || document.persondetails.bday == ""){
+		alert("please provide birth date");
+			document.persondetails.bday.focus();
+			
+	}
+	else if(document.persondetails.telephone == null || document.persondetails.telephone == ""){
+		alert("please provide telephone");
+			document.persondetails.telephone.focus();
+			
+	}
+	else if(document.persondetails.email == null || document.persondetails.email == ""){
+		alert("please provide email address");
+			document.persondetails.email.focus();
+			
+	}
+	else if(document.persondetails.pass == null || document.persondetails.pass == ""){
+		alert("please provide password");
+			document.persondetails.pass.focus();
+		
+	}
+
+}
+
+
+// function sel(){
+// 	var m = document.getElementById("select").value;
+// 	if(m==0){
+// 	open("legalage.html");
+// 	}else if(m==1){
+// 		open("legalage2.html")
+// 	}else if(m==2){
+// 		open("legalage3.html")
+// 	}else{
+// 		alert("there's no 4th city");
+// 	}
+
+
+// function msg(){
+// 	var e = document.getElementById("select");
+// 	 var user1 = e.options[e.selectedIndex].value;
+// 	 var user2 = e.options[e.selectedIndex].text;
+// 	if(user1 == 0 && user2 == "Pune"){
+// 		open("legalage.html");
+// 	}
+// }
+	
+</script>
+</body>
+</html>

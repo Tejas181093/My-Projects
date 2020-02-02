@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: tomato;
+		}
+		.cont{
+			margin-top: 200px;
+			margin-left: 350px;
+			margin-bottom: 300px;
+			width: 500px;
+			height: 50px;
+
+			/*background-color: lightgray;*/
+			border:none;
+			/*background-image: url(vote.png);*/
+			/*display: inline-block;*/
+			padding: 25px;
+		}
+		.container{
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 12px;
+			cursor: pointer;
+			font-size: 22px;
+		}
+		/* Hide the browsers default radio button*/
+		.container input{
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+
+		}
+		/* create custom radio button*/
+		.checkmark{
+			position: absolute;
+			top:0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: #eee;
+			border-radius: 50%;
+		}
+		/*on mouseover add a grey background color*/
+		.container:hover input ~ 
+		.checkmark{
+			background-color: #ccc;
+		}
+		/*when radion button is checked add blue background*/
+		.container input:checked ~ 
+		.checkmark{
+			background-color: #2196F3;
+		}
+		/*create indicator (dot circle) - hidden when not checked */
+		.checkmark:after{
+			content: "";
+			position: absolute;
+			display: none;
+		}
+		/*show the indicator(dot circle) when checked*/
+		.container input:checked ~ 
+		.checkmark:after{
+			display: block;
+		}
+		/*style the indicator (dot circle)*/
+		.container .checkmark:after{
+			top:9px;
+			left: 9px;
+			width: 8px;
+			height: 8px;border-radius: 50%;
+			background:white;
+		}
+		input[type='submit']{
+			background-color: dodgerblue;
+			width: 150px;
+			height: 27px;
+			color:white;
+			border:none;
+			border-radius: 9px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="cont">
+	<center>
+<form>
+	<label class="container"> 
+		<input id="one" type="radio" name="ward" value="pune ward one" checked> Pune Ward 1 <br><br>
+	<span class="checkmark"></span></label>
+	
+	<label class="container"> 
+		<input id="two" type="radio" name="ward" value="pune ward two" > Pune Ward 2 <br><br>
+	<span class="checkmark"></span></label>
+
+	<label class="container">
+	<input id="three" type="radio" name="ward" value="pune ward three" > Pune Ward 3 <br><br>
+	<span class="checkmark"></span></label>
+
+	<!-- <label class="container">
+	<input type="radio" name="ward" value="pune ward 4" > Pune Ward 4 <br><br>
+	<span class="checkmark"></span></label>
+
+	<label class="container">
+	<input type="radio" name="ward" value="pune ward 5" > Pune Ward 5 <br><br>
+	<span class="checkmark"></span></label>
+ -->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Submit" onclick="redirect()">
+</form></center></div>
+<script type="text/javascript">
+	function redirect(){
+	if(document.getElementById("one").checked == true){
+		// window.location.href='thankyou1.html';
+		open("thankyou1.html");
+	}else if(document.getElementById("two").checked == true){
+		// window.location.href='thankyou2.html';
+		open("thankyou2.html");
+	}else if(document.getElementById("three").checked == true){
+		// window.location.href='thankyou3.html';
+		open("thankyou3.html");
+	}
+
+}
+</script>
+</body>
+</html>

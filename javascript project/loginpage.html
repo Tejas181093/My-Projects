@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+		body{
+			background-image: url(vote.png);
+			background-size: cover;
+		}
+		.container{
+			margin-top: 100px;
+			border:none;
+			width: 500px;
+			height: 250px;
+
+			background-color: tomato;
+			padding: 25px;
+			
+		}
+		.container h2{
+			color: white;
+		}
+		input[type='text'],input[type='password']{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+		}
+		input[type='login'],input[type='submit'],input[type='button']{
+			background-color: dodgerblue;
+			width: 150px;
+			height: 27px;
+			color:white;
+			border:none;
+			border-radius: 9px;
+		}
+		a{text-decoration: none;}
+    </style>
+	<title></title>
+</head>
+<body>
+	<center>
+	<div class="container">
+	<h2> LOGIN </h2>
+
+	<form name = "loginform" onsubmit = "return(validate());" method = "get">
+				
+				<label> Username </label>&nbsp;&nbsp;
+				<input type="text" name="Username" placeholder="Enter Username"><br><br>
+			
+				<label> Password </label>&nbsp;&nbsp;
+				<input type="Password" name="Password" placeholder="Enter Password"><br><br>
+			
+		
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<!-- <a href="age.html" target="_blank"> <input type="submit" value="login"> </a> <br><br> -->
+				<input type="submit" value="submit"><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" value="login" onclick= "msg()"><br><br>
+				
+				<label>Not Registered Yet... </label> <button><a href="signup.html"> Register </a></button>
+
+</form> </center> </div>
+<script type="text/javascript">
+	function validate(){
+		if(document.loginform.Username.value == ""){
+			alert("please provide Username");
+			document.loginform.Username.focus();
+			return false;
+		}
+		if(document.loginform.Password.value == ""){
+			alert("please fill password");
+			document.loginform.Password.focus();
+			return false;
+		}
+		return true;
+	}
+	function msg(){
+		if(document.loginform.Username.value != document.loginform.Password.value){
+			alert("sorryy username and password does not match");
+			//open("age.html");
+		}
+		else{
+			
+			open("age.html");
+		}
+		
+		
+	}
+</script>
+</body>
+</html>

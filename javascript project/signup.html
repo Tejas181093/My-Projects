@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			/*background-image: url(thanku.jpg);*/
+			background-color: lightgreen;
+			background-size: cover;
+		}
+		
+		.container{
+			margin-top: 50px;
+			border:none;
+			width: 500px;
+			height: 250px;
+
+			/*background-color: tomato;*/
+			padding: 25px;
+		}
+		input[type='text'],input[type='password']{
+			border:none;
+			text-align: center;
+			border-radius: 10px;
+			height: 27px;
+			}
+			input[type='submit'],input[type='button']:hover{
+			background:linear-gradient(aqua 5%, dodgerblue 100%); 
+			/*background-color: dodgerblue;*/
+			width: 100px;
+			height: 27px;
+			color:white;
+			border:none;
+			cursor: pointer;
+			border-radius: 9px;
+		}		
+
+		a{
+			text-decoration: none;
+			color:white;
+
+		}
+		#b{
+			background:linear-gradient(tomato 5%, red 100%);
+			/*background-color: tomato;*/
+			color: white;
+			border-radius: 9px;
+			padding: 5px;
+			width: 100px;
+		}
+
+
+
+
+
+
+
+
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<center>
+<div class="container">
+	<h2> Sign Up </h2>
+
+	<form name="signup" onsubmit = "return(validate());" method="get">
+		
+				<label> Full Name </label><br><br>
+
+				<input type="text" name="Fullname" placeholder="Name"><br><br>
+
+
+				<label> Email </label><br><br>
+
+				<input type="text" name="Email" placeholder="Email"><br><br>
+
+
+
+				<label> User Name </label><br><br>
+
+				<input type="text" name="Username" placeholder="Username"><br><br>
+
+
+			
+				<label> Password </label><br><br>
+
+				<input type="Password" name="Password" placeholder="Password"><br><br>
+
+
+
+				<label> Confirm Password </label><br><br>
+
+				<input type="Password" name="Confirmpassword" placeholder="Confirm Password"><br><br>
+				
+		
+				
+				
+				<!-- <input type="button" value="Sign Up"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Sign In -> </a> -->
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Sign Up"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="b"><a href="personaldetails.html" target="_blank"> Sign In </a></button>
+
+			
+		
+				
+				
+		
+	</form> </center> </div></center>
+
+	<script type="text/javascript">
+		function validate(){
+
+		if(document.signup.Fullname.value == ""){
+			alert("please provide Name");
+			document.signup.Fullname.focus();
+			return false;
+		}
+
+		if(document.signup.Email.value == ""){
+			// Email Validation code :
+			// var x = document.signup.Email.value;
+			// var atposition = x.indexOf("@");
+			// var dotposition = x.lastIndexOf(".");
+			// if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+			// alert("please provide valid email address \n atposition:"+atposition+"\n dotposition:"+dotposition);
+			// return false;
+
+			alert("please provide Email");
+			document.signup.Email.focus();
+			return false;
+		}
+
+		if(document.signup.Username.value == ""){
+			alert("please provide Username");
+			document.signup.Username.focus();
+			return false;
+		}
+
+		if(document.signup.Password.value == ""){
+			alert("please provide Password");
+			document.signup.Password.focus();
+			return false;
+		}
+
+		if(document.signup.Confirmpassword.value != document.signup.Password.value){
+			alert(" Password did not match");
+			document.signup.Password.focus();
+			return false;
+		}
+
+
+		/* Email Validation code : 
+
+		var x = document.myForm.email.value;
+		var atposition = x.indexOf("@");
+		var dotposition = x.lastIndexOf(".");
+		if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+			alert("please provide valid email address \n atposition:"+atposition+"\n dotposition:"+dotposition);
+			return false;
+		}
+
+
+
+
+
+
+
+
+
+		*/
+
+
+		return (true);
+
+	}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
