@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <script src="angular-1.7.9/angular.min.js"></script>  -->
+
+	 <!-- online link -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- offline link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	/*.col-md-6 ul li:hover {background-color: black;}
+  	.col-md-6 ul li a:hover {color: yellow;}*/
+  	.sz ul li{background-color: black;}
+  	.sz ul li a{color: yellow;}
+  	.col-md-2 button{background-color: black;}
+  	.col-md-2 button a{color: yellow;}
+  	body{background-color: grey;}
+  </style>
+</head>
+<body ng-app="myapp" ng-controller="ctrl">
+	<!------------------------------------------------------ nav bar --------------------------------------------------------------->
+<nav class="navbar navbar-inverse">
+	<!-- <div class="container"> -->
+	<div class="navbar-header"><img src="logo.jpg" style="width: 70px; height: 40px;"><a href="#" class="navbar-brand" style="color:yellow;font-size: 27px;">YM MOTORS</a>
+	</div>
+
+
+	<button data-target="#AAA" data-toggle="collapse" class="navbar-toggle">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+	<!-- <form class="navbar-form navbar-right">
+		<div class="input-group">
+			<input class="form-control" type="search" name="" placeholder="search here">
+		</div>
+		<div class="input-group-btn">
+			<button class="btn btn-info">Search<i class="glyphicon glyphicon-search"></i></button>
+		</div>
+	</form> -->
+
+	<div id="AAA" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav navbar-right"> 
+			<li><a href=""><i class="glyphicon glyphicon-facetime-video" style="color: #e6e600; font-size: 24px;"></i></a></li>
+			<li><a href=""><i class="glyphicon glyphicon-home" style="color: #e6e600; font-size: 24px;"></i></a></li>
+			<li><a href=""><i class="glyphicon glyphicon-cog" style="color: #e6e600; font-size: 24px;"></i></a></li>
+			<li><a href=""><i class='fa fa-car' style="color: #e6e600; font-size: 24px;"></i></a></li>
+			<li><a href=""><i class="glyphicon glyphicon-comment" style="color: #e6e600; font-size: 24px;"></i></a></li>
+			<li><a href=""><i class="glyphicon glyphicon-circle-arrow-right" style="color: #e6e600; font-size: 24px;"></i></a></li>
+		</ul>
+	</div>
+<!-- </div> -->
+<br><br>
+</nav>
+<!-------------------------------------------------------- nav bar end --------------------------------------------------------------->
+
+
+
+<!---------------------------------------------- body start/nav bar pill start ------------------------------------------------------->
+<div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-6 sz">
+			<ul class="nav nav-pills list-group"> 
+				<li class="list-group-item"><a data-toggle="pill" href="#A">My Profile</a></li>
+				<li class="list-group-item"><a data-toggle="pill" href="#B">My Garage</a></li>
+				<li class="active list-group-item"><a data-toggle="pill" href="#C">Dashboard</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2"></div>
+	</div><br><br><br>
+
+
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-6">
+			
+			<div class="tab-content">
+				<div id="A" class="tab-pane">
+					<!--------------------------------------------- My Profile Content ------------------------------------------->
+					<h1>Hii</h1>
+				</div>
+				<div id="B" class="tab-pane">
+					<!--------------------------------------------- My Garage Content ------------------------------------------->
+					<h1>Hiiiii</h1>
+				</div>
+				<!--------------------------------------------- Dashboard content ------------------------------------------->
+				<div id="C" class="tab-pane active">
+					<ul class="nav nav-pills"> 
+						<li class="active"><a data-toggle="pill" href="#V">My Story</a></li>
+						<li><a data-toggle="pill" href="#W">Value</a></li>
+						<li><a data-toggle="pill" href="#X">Expenses</a></li>
+						<li><a data-toggle="pill" href="#Y">Logbook</a></li>
+						<li><a data-toggle="pill" href="#Z">History</a></li>
+					</ul><br>
+				</div>
+					<div class="tab-content">
+						<div id="V" class="tab-pane active">
+							<!--------------------------------------------- My story content ------------------------------------------->
+							<form name="myform">
+								<fieldset>
+									<legend>When did you buy the Vehicle?</legend>
+									<textarea name="one" rows="2" cols="90"></textarea>
+									<!-- <input type="text" name="one" style="width: 100%; height: 70px;"> -->
+								
+								 <p style="text-align: right;">298/300</p>
+						
+							
+								
+									<legend>Why did you choose that Brand/Model?</legend>
+									<textarea name="two" rows="2" cols="90"></textarea>
+									<!-- <input type="text" name="two" style="width: 100%; height: 70px;"> -->
+								</fieldset>
+
+								
+
+
+
+							</form> <p style="text-align: right;">298/300</p><br>
+					<button onclick="validate()" style="background-color: black; color: yellow; padding: 6px; width: 90px; margin-left: 550px;">save</button>
+					<script type="text/javascript">
+	// 								function validate(){
+ // 	var a =document.myform.one.value;
+ // 	var b =document.myform.two.value;
+ // 	if(as==null|| a==""){
+ // 		alert("please provide details");
+ // 		// a.focus();
+ // 	}else if(b == null || b == ""){
+ // 		alert("please provide details");
+ // 		// b.focus();
+ // 		return false;
+ // 	}else
+ // 		return true;
+ // }
+								 </script>
+					</div>
+
+						<div id="W" class="tab-pane">
+							<!--------------------------------------------- Value contet ------------------------------------------->
+						</div>
+						<div id="X" class="tab-pane">
+							<!--------------------------------------------- Expenses contet ------------------------------------------->
+							<p>A digital trail of your expenses so that a future buyer may understands the premium selling price </p><br>
+							<!-- <div class="collapse" id="z"> -->
+							<div class="panel panel-info" ng-repeat="x in db">
+								<div class="panel-body" style="display: ">
+									<span>Invoice Date:</span>&nbsp;&nbsp;&nbsp;<span>{{x.Invoice_Date}}</span><i class="glyphicon glyphicon-trash" style="margin-left: 550px;"></i>
+									<p style="color: yellow">_______________________________________________________________________________</p>
+									<table class="table table-hover">
+
+										
+										<tr>
+											<td>Item:</td>
+											<td>{{x.Item}}</td>
+											<!-- <td>Brake Callipers</td> -->
+										</tr>
+										<tr>
+											<td>Amount:</td>
+											<td>{{x.Amount}}</td>
+											<!-- <td>RS.200</td> -->
+										</tr>
+										<tr>
+											<td>Remark:</td>
+											<td>{{x.Remark}}</td>
+											<!-- <td>test</td> -->
+										</tr>
+									</table>
+									<!-- <button style="margin-left: 500px;" id="btn">Show More</button> -->
+								</div>
+								<!-- <a href="#z" data-toggle="collapse"> -->
+									<button style="margin-left: 500px;" id="btn">Show More</button>
+								<!-- </a> -->
+							</div> 
+						<!-- </div> -->
+						</div>
+						<div id="Y" class="tab-pane">
+							<!--------------------------------------------- Logbook contet ------------------------------------------->
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3">
+										<form>
+											<fieldset>
+												<legend>Invoice Date</legend>
+												    <input type="text" placeholder="yyyy/mm/dd" style="width: 100%; height: 32px;">
+												    <br><br>
+												    <input type="file" placeholder="choose file..." id="file" style="width: 185px; height: 32px;">  <span><a  href="" class="btn btn-info">Upload</a></span>  <br><br>
+												    <div style="width: 270px; height:270px; border:1px solid black"><img src="" style="border:1px dotted black; width: 250px; height: 250px; margin:10px;"></div>
+												    
+											</fieldset>
+										</form>
+									</div>
+									<div class="col-md-6">
+										<button style="background-color: black;color: yellow; margin-left: 325px; padding: 11px;">Go to Expenses</button><br><br>
+										<div style="width: 100%; height: 366px; border:1px solid black" class="container">
+											<form name="myform1">
+												<fieldset>
+													<legend>Item</legend>
+													<select style="width: 100%" required>
+														<option selected hidden value="">Select Code</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select><br><br><br>
+											<input type="number" name="amount" placeholder="Amount" style="width: 100%; height: 40px;">
+													<br><br><br>
+												<input type="text" name="remark" placeholder="Remark" style="width: 100%; height: 80px;">
+													<br><br>
+													<button class="btn" style="padding: 9px; background-color: black; color: yellow">Cant Find Part</button> 
+													<button class="btn" onclick="validate1()" style="padding: 9px; margin-left: 350px; background-color: black; color: yellow">Save</button>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</div>
+						</div>
+						<div id="Z" class="tab-pane">
+							<!--------------------------------------------- History contet ------------------------------------------->
+						</div>
+					</div>
+			<!-- </div>-->			
+		</div>
+		</div>
+		<div class="col-md-2"><button class="btn btn-info" style="padding: 9px; width: 130px;"><a href="">Add Expenses</a></button></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var app = angular.module("myapp",[]);
+	app.controller("ctrl",function($scope){
+		$scope.db=[{Invoice_Date:"10/1/2020",Item:"Brake Callipers",Amount:200, Remark:"test"},
+				  {Invoice_Date:"11/1/2020",Item:"Engine Oil",Amount:300, Remark:"test"},
+				  {Invoice_Date:"12/1/2020",Item:"Piston",Amount:500, Remark:"test"}];
+	});
+
+
+ function validate(){
+ 	var a = document.myform.one.value;
+ 	var b = document.myform.two.value;
+ 	if(a == null || a == ""){
+ 		alert("please provide details");
+ 		// a.focus();
+ 	}else if(b == null || b == ""){
+ 		alert("please provide details");
+ 		// b.focus();
+ 		return false;
+ 	}else
+ 		return true;
+ }
+
+function validate1(){
+ 	var x = document.myform1.amount.value;
+ 	var y = document.myform1.remark.value;
+ 	if(x == null || x == ""){
+ 		alert("please provide details");
+ 		// a.focus();
+ 	}else if(y == null || y == ""){
+ 		alert("please provide details");
+ 		// b.focus();
+ 		return false;
+ 	}else
+ 		return true;
+ }
+
+
+document.getElementById("#file").setAttribute("type","file"); // logbook tabs browse (file type) 
+
+
+
+
+ $("#btn").click(function(){
+ 	$(".panel-body").show(2000);   // upon click on show more button it must show all 3 panels in angular (my expenses tab)
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

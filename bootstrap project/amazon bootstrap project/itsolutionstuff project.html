@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- offline link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+  	.well-sm{height: 175vh;}
+  	.col-md-3{background-color: #1a1a1a}
+  	.sz{width: 300px; height: 200px;}
+  	.xxx{margin-top: 5px;}
+  	#ft{background-color: black; color: white; text-align: center; padding: 20px; margin-bottom: 20px;}
+  	.nav-stacked li a{font-size: 20px;}
+  </style>
+</head>
+<body>
+<div>
+<!-- nav bar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		<div class="navbar-header"> <img class="xxx" src="amazon.jpg" style="width: 70px; height: 40px;"> <a href="#" class="navbar-brand" style="color: yellow;"> Amazon Services</a></div>
+
+
+			<button data-target="#AAA" data-toggle="collapse" class="navbar-toggle"> <!--this is to hide menu navbar when resize screen-->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+
+		<form class="navbar-form navbar-right">
+		<div class="input-group">
+			<input class="form-control" type="search" name="" placeholder="search here">
+			<div class="input-group-btn">
+				<button class="btn btn-info"> Search <i class="glyphicon glyphicon-search"></i> </button>
+			</div>
+		</div>
+		</form>
+
+
+		<div id="AAA" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../page1.html"><i class="glyphicon glyphicon-home"></i>&nbsp;HOME</a></li>
+				<li><a href="../project2.html"><i class="glyphicon glyphicon-file"></i>&nbsp;ABOUT</a></li>
+				<li><a href=""><i class="glyphicon glyphicon-earphone"></i>&nbsp;CONTACT US</a></li>
+				<li><a href="../Login Page/login2.html"><i class="glyphicon glyphicon-log-in"></i>&nbsp;SIGN IN</a></li>
+				<li><a href="../form validation angular1.html"><i class="glyphicon glyphicon-lock"></i>&nbsp;REGISTER</a></li>
+			</ul> 
+		</div>
+		
+	</div>
+	</nav>
+<!-- nav bar end-->
+</div><br><br><br><br><br>
+
+<!-- body start here -->
+<div>
+	<div class="row">
+		<div class="col-md-3 well well-sm">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a data-toggle="pill" href="#A"><i class="glyphicon glyphicon-picture"></i>&nbsp;&nbsp;Gallery</a></li>
+				<li><a data-toggle="pill" href="#B"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;News</a></li>
+				<li><a data-toggle="pill" href="#C"><i class="glyphicon glyphicon-th"></i>&nbsp;&nbsp;Cards</a></li>
+				<li><a data-toggle="pill" href="#D"><i class="glyphicon glyphicon-send"></i>&nbsp;&nbsp;Career</a></li>
+				<li><a data-toggle="pill" href="#E"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Contact</a></li>
+				<li><a data-toggle="pill" href="#F"><i class="glyphicon glyphicon-facetime-video"></i>&nbsp;&nbsp;Videos</a></li>
+			</ul> 
+		</div>
+		<div class="col-md-9">
+			<div class="tab-content">
+				<div id="A" class="tab-pane active">
+					<h2 class="text-center text-uppercase bg-info">My Gallery</h2><br>
+					<img src="nature1.jpg" class="img-thumbnail sz">
+					<img src="nature2.jpg" class="img-thumbnail sz">
+					<img src="nature3.jpg" class="img-thumbnail sz">
+					<img src="nature4.jpg" class="img-thumbnail sz">
+					<img src="tech1.jpg" class="img-thumbnail sz">
+					<img src="tech2.jpg" class="img-thumbnail sz">
+					<img src="tech3.jpg" class="img-thumbnail sz">
+					<img src="reus.jpg" class="img-thumbnail sz">
+					<img src="vk.jpg" class="img-thumbnail sz">
+					<img src="cr7.jpg" class="img-thumbnail sz">
+					<img src="new year.jpg" class="img-thumbnail sz">
+					<img src="blue eyes.jpg" class="img-thumbnail sz">
+				</div>
+				<div id="B" class="tab-pane">
+					<h2 class="text-center text-uppercase bg-info">News</h2>
+					<div class="well">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="trump.jpg" style=" width: 70px; border-radius: 50%">
+							</div>
+							<div class="media-body">
+								<h3 class="media-title">World News</h3>
+								<p>Trump becomes third US President to be impeached. Here are the other two Only three presidents, including Trump, have been successfully impeached in the 243-year history of the United States, and one had a near-miss.
+								 <a href="https://indianexpress.com/article/world/bill-clinton-andrew-johnson-who-were-the-us-presidents-impeached-before-donald-trump-richard-nixon-6174213/">Read More...</a></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="well">
+						<div class="media">
+							
+							<div class="media-body">
+								<h3 class="media-title">National News</h3>
+								<p>Pan-India CAA stir gains steam Protests erupted in several states Thursday against the Citizenship (Amendment) Act despite prohibitory orders imposed by the police. 
+								<a href="http://www.indiapress.org/gen/news.php/Indian_Express/400x60/0">Read More</a></p>
+							</div>
+							<div class="media-right">
+								<img class="media-object" src="caa.jpeg" style=" width: 90px; height: 90px; border-radius: 50%">
+							</div>
+						</div>
+					</div>
+
+					<div class="well">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="trump.jpg" style=" width: 70px; border-radius: 50%">
+							</div>
+							<div class="media-body">
+								<h3 class="media-title">World News</h3>
+								<p>Trump becomes third US President to be impeached. Here are the other two Only three presidents, including Trump, have been successfully impeached in the 243-year history of the United States, and one had a near-miss.
+								 <a href="https://indianexpress.com/article/world/bill-clinton-andrew-johnson-who-were-the-us-presidents-impeached-before-donald-trump-richard-nixon-6174213/">Read More...</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="well">
+						<div class="media">
+							
+							<div class="media-body">
+								<h3 class="media-title">National News</h3>
+								<p>Pan-India CAA stir gains steam Protests erupted in several states Thursday against the Citizenship (Amendment) Act despite prohibitory orders imposed by the police. 
+								<a href="http://www.indiapress.org/gen/news.php/Indian_Express/400x60/0">Read More</a></p>
+							</div>
+							<div class="media-right">
+								<img class="media-object" src="caa.jpeg" style=" width: 90px; height: 90px; border-radius: 50%">
+							</div>
+						</div>
+					</div>
+
+					<div class="well">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="trump.jpg" style=" width: 70px; border-radius: 50%">
+							</div>
+							<div class="media-body">
+								<h3 class="media-title">World News</h3>
+								<p>Trump becomes third US President to be impeached. Here are the other two Only three presidents, including Trump, have been successfully impeached in the 243-year history of the United States, and one had a near-miss.
+								 <a href="https://indianexpress.com/article/world/bill-clinton-andrew-johnson-who-were-the-us-presidents-impeached-before-donald-trump-richard-nixon-6174213/">Read More...</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div id="C" class="tab-pane">
+					<h2 class="text-center text-uppercase bg-info">Cards</h2><br>
+					
+					<div class="row"><!--  first row start here-->
+						
+						<div class="col-md-4"><!-- first card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: Kiara White</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student1.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- first card end here -->
+
+						<div class="col-md-4"><!-- second card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: katy johnsson</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student2.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- second card end here -->
+
+						<div class="col-md-4"><!-- third card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: amyra sefried</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student3.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- third card end here -->
+
+					</div> <!-- first row end here-->
+
+
+					<div class="row"><!--  second row start here-->
+						
+						<div class="col-md-4"><!-- first card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: emma stone</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student4.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- first card end here -->
+
+						<div class="col-md-4"><!-- second card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: britney spears</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student5.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- second card end here -->
+
+						<div class="col-md-4"><!-- third card start here -->
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h5>Name: selena gomez</h5>
+								</div>
+								<div class="panel-body">
+									<img src="student6.jpg" class="img-thumbnail" style="height: 150px; width: 180px;">
+								</div>
+								<div class="panel-footer">
+									<h6>Company: Infosys</h6>
+									<h6>Salary: 50k</h6>
+									<h6>Email: abc@gmail.com</h6>
+								</div>
+							</div>
+						</div> <!-- third card end here -->
+
+					</div> <!-- second row end here-->
+
+				</div> 
+
+
+
+				<div id="D" class="tab-pane">
+					<h2 class="text-center text-uppercase bg-info">Career</h2><br>
+
+				
+				<div class="carousel slide" id="Z" data-ride="carousel"> <!-- carousel career page start here -->
+					<ul class="carousel-indicators">
+						<li class="active" data-target="#Z" data-slide-to="0"></li>
+						<li data-target="#Z" data-slide-to="1"></li>
+						<li data-target="#Z" data-slide-to="2"></li>
+						<li data-target="#Z" data-slide-to="3"></li>
+						<li data-target="#Z" data-slide-to="4"></li>
+						<li data-target="#Z" data-slide-to="5"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="c.png" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">C TUTORIAL</h3>
+								<p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development</p>
+									<button class="btn btn-danger">Learn More</button>
+							</div>
+						</div>
+						<div class="item">
+							<img src="java.jpg" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">JAVA TUTORIAL</h3>
+								<p>Java is one of the most popular and widely used programming language.
+									Java has been one of the most popular programming language for many years.
+									Java is Object Oriented. However it is not considered as pure object oriented as it provides support for primitive data types (like int, char, etc)</p>
+									<button class="btn btn-danger">Learn More</button>
+							</div>
+						</div>
+						<div class="item">
+							<img src="ui.jpg" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">UI/UX TUTORIAL</h3>
+								<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine</p>
+									<button class="btn btn-danger">Learn More</button>
+							</div>
+						</div>
+						<div class="item">
+							<img src="angular.png" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">ANGULAR TUTORIAL</h3>
+								<p>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+									<button class="btn btn-info">Learn More</button>
+							</div>
+						</div>
+						<div class="item">
+							<img src="ReactJS.png" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">REACT TUTORIAL</h3>
+								<p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+								Declarative views make your code more predictable and easier to debug.</p>
+									<button class="btn btn-danger">Learn More</button>
+							</div>
+						</div>
+						<div class="item">
+							<img src="php.png" style="width: 1500px; height: 900px;">
+							<div class="carousel-caption">
+								<h3 class="text-center">PHP TUTORIAL</h3>
+								<p>The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a server-side scripting language designed specifically for web development. PHP can be easily embedded in HTML files and HTML codes can also be written in a PHP file. The thing that differentiates PHP with client-side language like HTML is, PHP codes are executed on the server whereas HTML codes are directly rendered on the browser.</p>
+									<button class="btn btn-danger">Learn More</button>
+							</div>
+						</div>
+					</div>
+					<a href="#Z" data-slide="prev" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
+					<a href="#Z" data-slide="next" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+				</div><!-- carousel career page end here -->
+				</div>
+
+				<div id="E" class="tab-pane">
+					<h2 class="text-center text-uppercase bg-info">Contact</h2><br>
+					<h3>About Us</h3>
+					<p>Amazon Web Services (AWS) is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow. ... Securely store all your files on the cloud so you can access them from anywhere.Amazon Web Services (AWS) is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow. ... Securely store all your files on the cloud so you can access them from anywhere. <a class="btn btn-info" href="https://aws.amazon.com/">Learn More...</a> </p><br>
+				
+					<div class="row">
+						<div class="col-md-2">
+							<img src="jeff.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-md-10">
+							<h3>Founder and CEO : Jeff Bezos</h3>
+							<p>Jeffrey Preston Bezos (/ˈbeɪzoʊs/;[a][4] né Jorgensen; born January 12, 1964) is an American internet and aerospace entrepreneur, media proprietor, and investor. He is best known as the founder, Chief executive officer, and president of Amazon.com, Inc. The first centi-billionaire on the Forbes wealth index, Bezos was named the "richest man in modern history" after his net worth increased to $150 billion in July 2018.[5] In September 2018, Forbes described him as "far richer than anyone else on the planet" as he added $1.8 billion to his worth when Amazon became the second company in history to have a market cap of $1 trillion...<a class="btn btn-info" href="https://en.wikipedia.org/wiki/Jeff_Bezos">See More...</a> </p>
+						</div>
+					</div>
+
+					<div id="ft">
+						<h1>aws.amazon.com</h1>
+						<h5>Address : Amazon.com, Inc. Customer service PO Box 81226 Seattle, WA 98108-1226</h5>
+						<h5>Contact : (888) 280-3321 </h5>
+						<h5>Email : aws.amazon@gmail.com</h5>
+						<h5>Developed and Maintained by <i class="glyphicon glyphicon-user"></i> <a href="https://www.ibm.com/in-en">IBM</a> </h5>
+					</div>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.179745017885!2d-122.34155628480828!3d47.6226371791857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015378b86c63b%3A0x8f3d8f8cd399f6b8!2sAmazon!5e0!3m2!1sen!2sin!4v1576813769220!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+					<div class="well">
+						<h1 class="text-center">Enquiry Form</h1>
+						<form>
+							<div class="form-group">
+								<label>Fill your Name</label>
+								<input class="form-control" type="text" name="un" placeholder="Your Name">
+							</div>
+							<div class="form-group">
+								<label>Fill your Email</label>
+								<input class="form-control" type="email" name="un" placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<label>Fill your Contact Number</label>
+								<input class="form-control" type="number" name="un" placeholder="Your Number">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="6" placeholder="Ask your Queries"></textarea>
+							</div>
+							<button class="btn btn-info">Submit</button>
+							<button class="btn btn-danger">Cancel</button>
+							<!-- <span class="badge"> -->
+								
+								<a href="https://www.instagram.com/amazon/?hl=en"> <i class="fa fa-instagram" style="font-size: 27px; margin-left: 600px; color: #e6005c;"></i> </a>
+								<a href="https://www.facebook.com/Amazon/"> <i class="fa fa-facebook-square" style="font-size: 27px; color: #0066ff;"></i> </a>
+								<a href="https://twitter.com/amazon?lang=en"> <i class="fa fa-twitter-square" style="font-size: 27px; color: #3399ff;"></i> </a>
+								<a href="https://www.youtube.com/user/amazon"> <i class="fa fa-youtube-play" style="font-size: 27px; color: red;"></i> </a>
+								<a href=""> <i class="fa fa-whatsapp" style="font-size: 27px; color: lime;"></i> </a>
+							
+							<!-- </span> -->
+						</form>
+					</div>
+
+				</div>
+
+				<div id="F" class="tab-pane">
+					<h2 class="text-center text-uppercase bg-info">Videos</h2><br>
+
+					<h3>Amazon Web Services Tutorial 1</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wWeyzYzd17o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<h3>Amazon Web Services Tutorial 2</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/IT1X42D1KeA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<h3>Amazon Web Services Tutorial 3</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RLd_XTyt-w8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- body end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script type="text/javascript">
+	$(".nav li").hover(function(){
+		$(this).addClass("active");
+	});
+	$(".nav li").mouseleave(function(){
+		$(this).removeClass("active");
+	})
+</script> -->
+</body>
+</html>
